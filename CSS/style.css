@@ -1,0 +1,108 @@
+body{
+    font-family: 'Poppins';
+    background-color: #373231;
+    color: #E8D0BE;
+}
+
+textarea{
+    resize:none;
+    width: 390px;
+    height: 75px;
+}
+
+.container{
+    padding: 70px 0;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+    width: max-content;
+}
+
+.content p{
+    text-align: left;
+}
+
+header{
+    border-bottom: 5px solid #E8D0BE;
+}
+
+.option button{
+    padding: 36px 36px;
+    color: #373231;
+    font-size: 36px;
+    width: 150px;
+    height: 150px;
+}
+
+.content button:hover {
+    background-color: #FF7B23;
+    box-shadow: inset;
+}
+
+.content button{
+    background-color: #EAE1DB;
+    border-radius: 10px;
+    color:#373231;
+    font-family: 'Poppins';
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.input-button{
+    text-align: left;
+}
+
+.input-area p{
+    text-align: left;
+}
+
+.output-area p{
+    text-align: left;
+}
+
+.calculation-area p{
+    text-align: left;
+}
+
+.input-button button{
+    width: 114px;
+    height: 36px;
+}
+
+.back-button{
+    margin-top: 10px;
+    width:173px;
+    height: 37px;
+}
+
+.info-area h4{
+    border-bottom: 3px solid #E8D0BE;
+}
+
+.info-area {
+    text-align: left;
+}
+
+.content p{
+    width: 350px;
+    font-size: 16px;
+    color: #EAE1DB;
+}
+
+.option-prompt p{
+    color:#E8D0BE;
+    font-size: 16px;
+}
+
+.option-prompt button{
+    margin-top: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.option-prompt button:hover{
+    background-color: #FF7B23;
+    box-shadow: inset;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <title>Fahrenheit ke Celsius</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Fahrenheit ke Celsius</h1>
+        </header>
+        <div class="content">
+            <p>Masukkan suhu derajat Fahrenheit(℉) ke kotak dibawah, lalu klik tombol 'Konversi' untuk
+                mendapatkan hasil konversi dalam bentuk Celsius (℃).</p>
+            <div class="input-area">
+                <p>Fahrenheit(℉):</p>
+                <textarea id="input-fahrenheit"></textarea>
+                <div class="input-button">
+                    <button onclick="convertFahrenheit()">Konversi</button>
+                    <button onclick="resetFahrenheit()">Reset</button>
+                </div>
+            </div>
+            <div class="output-area">
+                <p>Celcius (℃):</p>
+                <textarea id="output-celcius" readonly></textarea>
+            </div>
+            <div class="calculation-area">
+                <p>Cara kalkulasi:</p>
+                <textarea id="calculation-celcius" readonly></textarea>
+            </div>
+            <div class="info-area">
+                <h4>Cara Konversi Dari Fahrenheit(℉) ke Celsius(℃)</h4>
+                <p>suhu S dalam derajat Celsius(℃) sama dengan suhu S dalam derajat
+                    Fahrenheit(℉) dikurang 32 dikali 5/9.
+                </p>
+                <p>S(℃) = (S(℉) - 32) x 5/9 </p>
+                <p>atau</p>
+                <p>S(℃) = (S(℉) - 32) x 0.56 </p>
+            </div>
+            <button class="back-button" onclick="back()">Kembali ke beranda</button>
+        </div>
+    </div>
+</body>
+</html>
