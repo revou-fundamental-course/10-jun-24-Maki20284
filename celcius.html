@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="CSS/style.css">
     <script src="js/script.js"></script>
     <title>Celsius ke Fahrenheit</title>
 </head>
@@ -17,14 +17,15 @@
         </header>
         <div class="content">
             <p>Masukkan suhu derajat Celsius (℃) ke kotak dibawah, lalu klik tombol 'Konversi' untuk mendapatkan hasil konversi dalam bentuk Fahrenheit(℉).</p>
-            <div class="input-area">
+            <form class="input-area" id="temperatureForm">
                 <p>Celsius(℃):</p>
-                <textarea id="input-celcius"></textarea>
+                <input type="number" id="input-celcius" name="temperature" required min="-273.15"></input>
+                <span id="error-message" class="error"></span>
                 <div class="input-button">
-                    <button onclick="convertCelcius()">Konversi</button>
-                    <button onclick="resetCelcius()">Reset</button>
+                    <button type="button" onclick="validateFormCelcius()">Konversi</button>
+                    <button type="button" onclick="resetCelcius()">Reset</button>
                 </div>
-            </div>
+            </form>
             <div class="output-area">
                 <p>Fahrenheit(℉):</p>
                 <textarea id="output-fahrenheit" readonly></textarea>
